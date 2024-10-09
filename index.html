@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allys burgirr</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <div class="container">
+            <h1 class="logo">ALLYS BURGIRR</h1>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#order">Order</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#" id="registerBtn">Register</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <marquee behavior="scroll" direction="up" scrollamount="3">
+            
+                <div style="text-align: center;">
+                <h2>Welcome to ALLYS BURGIRR</h2>
+            <p>Your favorite destination for  burgers.</p>
+                </div>
+        </marquee>
+        </div>
+    </section>
+     <!-- Registration Modal -->
+     <div id="registrationModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2>Register</h2>
+            <form id="registrationForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <label for="address">addrress:</label>
+                <input type="text" name="address" placeholder="Address" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2>Our Menu</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="classic burger.jpg" alt="Classic Burger">
+                    <h3>Classic Burger</h3>
+                    <p>₹100</p>
+                </div>
+                <div class="menu-item">
+                    <img src="overlosd cheesey.jpg" alt="Cheese Burger">
+                    <h3>Cheese Burger</h3>
+                    <p>₹250</p>
+                </div>
+                <div class="menu-item">
+                    <img src="veggie bueger.jpg" alt="Veggie Burger">
+                    <h3>Veggie Burger</h3>
+                    <p>₹150</p>
+                </div>
+                <div class="menu-item">
+                    <img src="sizzliing burger.jpg" alt="Spicy Burger">
+                    <h3>Siizzling Burger</h3>
+                    <p>₹450</p>
+                </div>
+                <div class="menu-item">
+                    <img src="double layer .jpg" alt="Bacon Burger">
+                    <h3>Double Burger</h3>
+                    <p>veg and non veg both available </p>
+                    <p>₹750</p>
+                </div>
+                <div class="menu-item">
+                    <img src="combo meal.jpg" alt="Chicken Burger">
+                    <h3>combo meal</h3>
+                    <p>coke+french fries+burger(veg or non veg cost may varry)</p>
+                    <p>₹300</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Allys burgirr is a modern burger restaurant dedicated to serving the best  burgers in town. Our ingredients are fresh, and our recipes are crafted with passion and love. Whether you're craving a classic beef burger or a veggie delight,or a cheesy loaded burger  we have something for everyone!</p>
+        </div>
+    </section>
+
+    <!-- Order Section -->
+    <section id="order" class="order">
+        <div class="container">
+            <h2>Order Now</h2>
+            <p>Ready to enjoy your favorite burger? Click the button below to place your order!</p>
+            <a href="#" class="btn-order">Order Now</a>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Have any questions or feedback? We'd love to hear from you!</p>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Allys burgirr. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
